@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Anton&display=swap');
 
+html {
+    /* Fallback color so no white space ever flashes */
+    background-color: #121614; 
+}
 
 body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
-    url('../images/cornhole-background-mobile-600x1000.jpg');    background-position: center;
+    url('../images/cornhole-background-mobile-600x1000.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-color: #121614; /* Matches dark theme fallback */
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%; /* Replaced 100vw to prevent scrollbar overflow */
     min-height: 100vh;
-    height: auto;
+    min-height: 100dvh; /* Dynamic Viewport Height handles mobile address bars perfectly! */
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     box-sizing: border-box;
 }
 
