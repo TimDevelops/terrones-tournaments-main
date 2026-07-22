@@ -1,0 +1,47 @@
+@media (orientation: landscape) {
+    .image-wrapper {
+        margin-top: 5em;
+    }
+    .image-wrapper img {
+        width: 20vw;  /* Adjust for landscape */
+        max-width: 200px;
+    }
+}
+
+/* Small Screen Landscape */
+@media (max-width: 600px) and (orientation: landscape) {
+    .image-wrapper img {
+        width: 50vw; /* Further reduce image size */
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+    .image-wrapper img {
+        width: 80vw; 
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+    .image-wrapper img {
+        width: 50vw; /* Adjust width */
+        max-width: 400px; /* Set max-width */
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-wrapper img {
+        width: 80vw;
+        max-width: 400px;
+    }
+    header {
+        margin: 2em;
+    }
+    
+    header h1 {
+    padding: .5em;
+    
+    }
+}

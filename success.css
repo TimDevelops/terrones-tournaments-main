@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Anton&display=swap');
+
+
+body {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
+    url('../images/cornhole-background-mobile-600x1000.jpg');    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.521); /* Slightly darker background for readability */
+    padding: 6vw 1.5em;
+    margin: 0 auto;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow for a clean look */
+    color: #ffffff;
+}
+
+img {
+    width: 300px; /* Adjust logo size */
+    height: auto;
+}
+
+h1 {
+    font-size: 1.4em;
+    font-family: "Inter Tight";
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
+}
+
+p {
+    font-family: "Inter Tight";
+    color: #b4b4b4;
+    font-size: 1.2em;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #6eec77;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Inter Tight";
+    font-weight: 500;   
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+
+a:hover {
+    color: #4ead54;
+}
+
+@media (min-width: 376px) {
+    h1 {
+        font-size: 1.6em
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.281) 20%, rgba(0, 0, 0, 0.274) 80%, rgba(0, 0, 0, 0.7) 100%),
+        url('../images/cornhole-background-desktop-1920x1080.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .container {
+        max-width: 600px; /* Increased max-width for tablet and desktop */
+        padding: 5vw 3em; /* Adjust padding for better layout */
+    }
+
+    img {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 2em; /* Larger text on desktop */
+    }
+
+    p {
+        font-size: 1.5em; /* Larger text for better readability */
+    }
+    a {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #16161a;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
+    url('../images/volleyball-background-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+ header .content {
+    line-height: 1.2;
+    max-width: 80%; 
+    margin: 0 auto; 
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.cta button {
+    width: 41%;
+    height: 3rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    margin: .5rem;
+    font-family: "Inter Tight";
+    font-weight: 600;
+    letter-spacing: .5px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.cta .details {
+    background-color: #313233;
+    color: #faf5f5;
+}
+
+.cta .register {
+    background-color: #1400cc;
+    color: #faf5f5;
+}
+
+/* header {
+    padding: 0;
+    padding-top: 0;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
+    url('../images/volleyball-background-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
+    url('../images/volleyball-background-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+} */
+
+
+
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1.3em;
+    color: #faf5f5;
+    font-family: "Inter Tight";
+    text-shadow: 4px 3px 5px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+p {
+    text-align: left;
+    max-width: 60em;
+    font-size: 1.2rem;
+    color: #94a1b2;
+}
+
+
+main {
+    margin: 0 auto;
+    padding: 3em 1em;
+    max-width: 100rem;
+    line-height: 1.5;
+    color: #fffffe;
+    font-family: "Inter Tight";
+    background-color: #16161a;
+
+}
+
+main .content {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 60em;
+}
+
+main .content h2 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    /* text-align: c; */
+}
+
+main .content h3 {
+    font-size: 1.6em;
+    text-align: left;
+    margin-top: 3rem;
+    margin-bottom: 1em;
+}
+
+main .content p {
+    line-height: 2;
+}
+/* main .content li {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    color: #94a1b2;
+} */
+
+main .content span {
+    font-style: oblique;
+    font-weight: 700;
+}
+
+#logo img  {
+    max-width: 600px;
+}
+
+#logo img,
+#details img {
+    width: 100%;
+}
+
+/* #details img {
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    display: none;
+    -webkit-box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+    box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+} */
+
+
+#details {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Inter Tight";
+    background-color: #242629;
+    padding-top: 10px;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0.61) 0%, rgba(0, 0, 0, 0.479) 20%, rgba(0, 0, 0, 0.479) 80%, rgba(0, 0, 0, 0.623) 100%),
+    url(../images/volleyball-details1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* #details-div {
+    padding: 1rem;
+    text-align: left;
+    padding: 1rem;
+} */
+
+#details h2 {
+    color: #fffffe;
+    padding: 2rem 0 1rem 2rem;
+    font-size: 1.9rem;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.64);
+}
+
+/* #details-content {
+    box-sizing: border-box;
+    background-color: #16161a;
+    padding: 1em 2em;
+    margin-bottom: 3rem;
+    text-align: left;
+    border: 1px solid #d3d3d3;
+    border: 1px solid #010101;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+    box-shadow: 4px 2px 12px 0px rgba(0,0,0,0.38);
+} */
+
+.details-content {
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column; */
+    max-width: 50rem;
+    padding: 0 1rem;
+}
+
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 0 auto;
+    width: 95%;
+    /* max-width: 350px; */
+    height: 250px;
+    /* min-height: 12rem; */
+    background-color: #16161a;
+    padding: 0 1.5rem 0 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    color: #fffffe;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#details-content h3 {
+    margin: 1rem 0;
+    font-size: 1.5em;
+    color: #fffffe;
+}
+
+li {
+    font-size: 1.2em;
+    padding-left: 1em;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #94a1b2;
+} */
+
+a {
+    color: #2351c4;
+    text-decoration: none;
+}
+
+#details,
+#registration,
+#contact {
+    padding-bottom: 2rem;
+}
+
+.second-main {
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#registration p {
+    line-height: 2;
+    padding-bottom: 1rem;
+}
+
+#registration-form input {
+    height: 2.5rem;
+}
+
+#registration-form textarea {
+    height: 9rem;
+    resize: none;
+}
+
+#registration-form input,
+#registration-form textarea {
+    background-color: #242629;
+    border: 2px solid #010101;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 5px;
+}
+
+#team-name,
+#team-email,
+#team-phone,
+#team-players {
+    font-size: 1.3rem;
+    padding: 8px;
+    font-family: "Inter Tight";
+    color: #94a1b2;
+}
+
+#team-players {
+    height: 5em;
+    color: #94a1b2;
+    padding-top: 15px;
+}
+
+#team-players:focus,
+#team-name:focus,
+#team-email:focus,
+#team-phone:focus {
+    background-color: #5a5858;
+    color: #fffffe;
+    outline: none;
+}
+
+#form-div {
+    padding-top: 2em;
+}
+
+#form-div button {
+    background-color: #1c0070;
+    color: #faf5f5;
+    width: 80%;
+    max-width: 300px;
+    height: 65px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-family: "Inter Tight";
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.56);    
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    margin-top: 5px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);
+    transition: .3s ease-in-out;
+}
+
+#form-div button:hover {
+    background-color: #250291;
+}
+
+footer {
+    background-color: #242629;
+    font-family: "Inter Tight";
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+#contact {
+    max-width: 60em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #faf5f5;
+} 
+
+#contact p,
+#contact h2 {
+    text-align: left;
+}
+
+#contact h2 {
+    font-size: 1.9rem;    
+    padding: 1rem 0 .5rem 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.51);
+}
+
+#contact p {
+    line-height: 1.5;
+    padding: 0 1rem 2rem 1rem;
+
+}
+
+#line {
+    background-color: #8b8b8a;
+    width: 90%;
+    height: 2px;
+    border-radius: 5px;
+    margin-bottom: 4em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+#name,
+#email,
+#number,
+#message {
+    padding: 9px;
+    font-family: "Inter Tight";
+    border: 2px solid #646a74;
+    background-color: #242629;
+    color: #faf5f5;
+    font-size: 1.3rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    font-family: "Inter Tight";
+    margin-bottom: 1rem;
+}
+
+#contact-form input {
+    height: 2.5rem;
+}
+
+#contact-form textarea {
+    height: 9rem;
+    resize: none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    color: #faf5f5;
+    background-color: #4a4e53;
+    outline: none;
+    font-family: "Inter Tight";
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder{
+    color: #a3a3a3;
+}
+
+#contact-form button {
+    width: 80%;
+    max-width: 300px;
+    height: 65px;
+    background-color: #242629;
+    border: 2px solid #646a74;
+    color: #faf5f5;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Inter Tight";
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.51);
+    transition: .2s ease-in-out;
+
+}
+
+#contact-form button:hover {
+    background-color: #44484e;
+}
+
+#contact-form button:focus,
+#form-div button:focus {
+    outline: none;
+}
+
+foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+foot p {
+    color: #7b838f;
+    margin: 0 auto;
+    padding: .5em;
+    padding-bottom: em;
+    font-size: 1em;
+    text-align: center;
+}
